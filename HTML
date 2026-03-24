@@ -1,0 +1,72 @@
+
+<!-- Criado por Marise Miranda | 2017.1 -->
+<!-- Adaptado por Matheus Matos | 2025.1 -->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPTecher's Machine</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+
+
+
+
+<body class="imagem1">
+
+  
+    <center>
+       
+        <div class="borda">
+        
+        <h1 style="font-style: italic;">Guipo's Machine</h1>
+
+
+        <h3>Digite um número decimal:</h3>
+        <input id="demo1" type="text" placeholder="Ex: 42">
+        <br><br>
+
+        <button onclick="converter()">Converter</button>
+
+        <h3>Resultados:</h3>
+        <p>Octal:
+        <div style="font-style: italic";  id="demo2"></div>
+        </p>
+        <p>Hexadecimal:
+        <div style="font-style: sans"; id="demo3"></div>
+        </p>
+        <p>Binário:
+        <div style="font-style: inherit"; id="demo4"></div>
+        </p></div>
+
+        <div class="borda"  style="display: none;" id="div_Jesus">
+            
+    </center>
+
+    <script>
+        function converter() {
+            var decimal = Number(demo1.value);
+
+            demo2.innerHTML = decimal.toString(8);
+            demo3.innerHTML = decimal.toString(16);
+            demo4.innerHTML = decimal.toString(2);
+
+            document.getElementById("div_Jesus").style.display = "block";
+            
+            div_Jesus.innerHTML = `6 Jesus respondeu: <br>— Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai senão por mim. <br>João 14:6 - NAA <br><br> 16 Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo o que nele crê não pereça, mas tenha a vida eterna.<br>
+                                     João 3:16 - NAA <br>  <img width="400" src="https://static.vecteezy.com/ti/vetor-gratis/p1/1938169-jesus-cristo-carregando-cruz-cartoon-grafico-vetor.jpg">`
+
+
+        
+        }
+    </script>
+</body>
+
+</html>
